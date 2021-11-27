@@ -1,0 +1,32 @@
+body {
+	border: 1px dashed hsl(0, 0%, 0%);
+}
+
+div {
+	border: 1px dashed hsl(500, 100%, 50%);
+}
+
+h1 {
+	border: 1px dashed hsl(0, 100%, 50%);
+}
+h2 {
+	border: 1px dashed hsl(0, 60%, 50%);
+}
+h3 {
+	border: 1px dashed hsl(0, 40%, 50%);
+}
+h4 {
+	border: 1px dashed hsl(0, 20%, 50%);
+}
+
+p {
+	border: 1px dashed hsl(350, 100%, 88%);
+}
+
+ul,
+ol {
+	border: 1px dashed hsl(240, 100%, 50%);
+}
+li {
+	border: 1px dashed hsl(240, 40%, 50%);
+}

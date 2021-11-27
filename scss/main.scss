@@ -1,0 +1,92 @@
+@use './base/root';
+@use './base/resets';
+// @use './base/highlighter';
+
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: top;
+	place-items: center;
+	height: 100vh;
+
+	.card:first-child {
+		border-top-left-radius: var(--card-border-radius);
+		border-top-right-radius: var(--card-border-radius);
+		border-bottom-right-radius: 0;
+		border-bottom-left-radius: 0;
+	}
+	.card:last-child {
+		border-top-left-radius: 0;
+		border-top-right-radius: 0;
+		border-bottom-right-radius: var(--card-border-radius);
+		border-bottom-left-radius: var(--card-border-radius);
+	}
+
+	@media (min-width: 50em) {
+		flex-direction: row;
+		justify-content: center;
+
+		.card:first-child {
+			border-top-left-radius: var(--card-border-radius);
+			border-top-right-radius: 0;
+			border-bottom-right-radius: 0;
+			border-bottom-left-radius: var(--card-border-radius);
+		}
+		.card:last-child {
+			border-top-left-radius: 0;
+			border-top-right-radius: var(--card-border-radius);
+			border-bottom-right-radius: var(--card-border-radius);
+			border-bottom-left-radius: 0;
+		}
+	}
+}
+
+.card {
+	color: var(--veryLightGray);
+	padding: 2rem;
+
+	> * + * {
+		margin-top: 1rem;
+	}
+
+	.category {
+		font-family: var(--ff-big-shoulders);
+	}
+
+	.description {
+		font-family: var(--ff-outfit);
+		max-width: 21ch;
+		font-size: 0.875rem;
+		height: 10rem;
+	}
+
+	&.sedans {
+		background: var(--brightOrange);
+
+		button.learn-more {
+			color: var(--brightOrange);
+		}
+	}
+	&.suvs {
+		background: var(--darkCyan);
+
+		button.learn-more {
+			color: var(--darkCyan);
+		}
+	}
+	&.luxury {
+		background: var(--veryDarkCyan);
+
+		button.learn-more {
+			color: var(--veryDarkCyan);
+		}
+	}
+
+	button.learn-more {
+		border-radius: 50px;
+		border: none;
+		padding: 0.5rem 2rem;
+		font-family: var(--ff-outfit);
+		font-size: 0.875rem;
+	}
+}

@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Outfit&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Open+Sans&display=swap");
+
+:root {
+	/* Colors */
+
+	--brightOrange: hsl(31, 77%, 52%);
+	--darkCyan: hsl(184, 100%, 22%);
+	--veryDarkCyan: hsl(179, 100%, 13%);
+
+	--transparentWhite: hsla(0, 0%, 100%, 0.75);
+	--veryLightGray: hsl(0, 0%, 95%);
+
+	--card-border-radius: 5px;
+
+	--ff-outfit: "Outfit", sans-serif;
+	--ff-big-shoulders: "Big Shoulders Display", cursive;
+	--fs-default: 15px;
+}
